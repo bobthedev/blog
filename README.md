@@ -55,11 +55,13 @@ The last sentence in apple’s explanation was:
 
 let’s see with example what swift engineers wanted to say;
 
-```func global(firstParameter: String, secondParameter: String){
+```
+func global(firstParameter: String, secondParameter: String){
 print(“\(firstParameter) , \(secondParameter)”)
  }
 global(firstParameter: “Hello”, secondParameter: “buu”)
-//prints -> Hello , buu```
+//prints -> Hello , buu
+```
 
 
 
@@ -68,11 +70,13 @@ There is no argument labels so parameter name will be both internal and external
 But what if we want to omit external name? Then we use underscore( _ ).
 Here it is:
 
-```func ignoreExternalName(_ firstParameter: String, _ secondParameter:String){
+```
+func ignoreExternalName(_ firstParameter: String, _ secondParameter:String){
 print("\(firstParameter), \(secondParameter)")
 }
 ignoreExternalName(“first”, “second”)
-//prints -> first, second```
+//prints -> first, second
+```
 
 You can also ignore your parameter name(internal) but it will be meaningless because you can’t use it inside of your method.
 
@@ -80,7 +84,8 @@ You can also ignore your parameter name(internal) but it will be meaningless bec
 
 Let’s use all of these in one example to wrap up
 
-```func namingParameters(iAm name: String, from country: String, _ job: String, yearOld: Int, comment _: String){
+```
+func namingParameters(iAm name: String, from country: String, _ job: String, yearOld: Int, comment _: String){
 //As you see I omitted parameter name in the last parameter now I can't use it here
 print(“I am \(name) from \(country), I am a \(job) who is \(yearOld). Thanks for reading this blog, hope to see you in the next blogs”)
 }
@@ -88,7 +93,8 @@ print(“I am \(name) from \(country), I am a \(job) who is \(yearOld). Thanks f
 namingParameters(iAm: <#T##String#>, from: <#T##String#>, <#T##job: String##String#>, yearOld: <#T##Int#>, comment: <#T##String#>)
 //Done
 namingParameters(iAm: "Davut", from: "Turkmenistan", "student", yearOld: 20, comment: "Done")
-//prints -> I am Davut from Turkmenistan, I am a student who is 20. Thanks for reading this blog, hope to see you in the next blogs```
+//prints -> I am Davut from Turkmenistan, I am a student who is 20. Thanks for reading this blog, hope to see you in the next blogs
+```
 Wohoo 🎉 looks awesome right?
 Time to beautify your own methods. 😉
 > If anything else just leave a comment 
