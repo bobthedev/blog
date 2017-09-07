@@ -6,7 +6,7 @@
 
 > //Image here
 
-###Little but important
+### Little but important
 --------------------
 
 In swift, naming parameters is a bit different. In my learning process I had a lot of stuff to pick up in swift , so I didn't want to pay my attention to the little details like naming the parameters of function besides I didn’t know that swift has this feature.
@@ -14,10 +14,10 @@ In swift, naming parameters is a bit different. In my learning process I had a l
 As days pass by I had to read others swift codes and figure out what does the developer wanted to do then I saw separate parameter names in his/her methods that made me to stop and think about it. This was very cool feature for readability. 
 So let’s see how do we use them;
 
-###beautify(swift functions: )
+### beautify(swift functions: )
 Let’s start with example:
 
-``` 
+```swift
 func introTo(parameter naming: String) -> String{
 //we use naming here
 return naming
@@ -39,7 +39,7 @@ As you can see above when you give the name for your parameter there are two sep
 
 So if we look at our example:
 
-```
+```swift
 func introTo(parameter naming: String,... 
 ```
 
@@ -55,7 +55,7 @@ The last sentence in apple’s explanation was:
 
 let’s see with example what swift engineers wanted to say;
 
-```
+```swift
 func global(firstParameter: String, secondParameter: String){
 print(“\(firstParameter) , \(secondParameter)”)
  }
@@ -70,7 +70,7 @@ There is no argument labels so parameter name will be both internal and external
 But what if we want to omit external name? Then we use underscore( _ ).
 Here it is:
 
-```
+```swift
 func ignoreExternalName(_ firstParameter: String, _ secondParameter:String){
 print("\(firstParameter), \(secondParameter)")
 }
@@ -80,11 +80,11 @@ ignoreExternalName(“first”, “second”)
 
 You can also ignore your parameter name(internal) but it will be meaningless because you can’t use it inside of your method.
 
-###Wrapping Up
+### Wrapping Up
 
 Let’s use all of these in one example to wrap up
 
-```
+```swift
 func namingParameters(iAm name: String, from country: String, _ job: String, yearOld: Int, comment _: String){
 //As you see I omitted parameter name in the last parameter now I can't use it here
 print(“I am \(name) from \(country), I am a \(job) who is \(yearOld). Thanks for reading this blog, hope to see you in the next blogs”)
@@ -100,4 +100,3 @@ Time to beautify your own methods. 😉
 > If anything else just leave a comment 
 
 
----
