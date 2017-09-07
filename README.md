@@ -17,7 +17,8 @@ So let’s see how do we use them;
 ###beautify(swift functions: )
 Let’s start with example:
 
-``` func introTo(parameter naming: String) -> String{
+``` 
+func introTo(parameter naming: String) -> String{
 //we use naming here
 return naming
 }
