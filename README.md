@@ -24,7 +24,8 @@ return naming
 }
 //when we call our function we use parameter
 introTo(parameter: "swift functions")
-//returns -> swift functions```
+//returns -> swift functions
+```
 
 As you can see above when you give the name for your parameter there are two separate names. So the first one is for external which means your parameter there are two separate names. So the first one is for external which means you use it when you call your function outside of the method and the second one is for internal which means local variable that you use inside of your method
 
@@ -38,7 +39,9 @@ As you can see above when you give the name for your parameter there are two sep
 
 So if we look at our example:
 
-```func introTo(parameter naming: String,... ```
+```
+func introTo(parameter naming: String,... 
+```
 
 `parameter` is an argument label and the `naming` is a parameter name.
 By the way, All parameters must have unique names. But multiple parameters can have same argument label. Unique argument labels are preferred for readability.
